@@ -501,17 +501,26 @@
 
         <div class="contact-form-container">
             <h3 style="color: #00d4ff; margin-bottom: 20px; text-align: center;">Send me a message</h3>
-            <form class="contact-form" style="max-width: 600px; margin: 0 auto;">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
-                    <input type="text" placeholder="Your Name" required style="padding: 15px; border-radius: 10px; border: 1px solid rgba(0, 212, 255, 0.3); background: rgba(255, 255, 255, 0.05); color: #ffffff; font-size: 16px;">
-                    <input type="email" placeholder="Your Email" required style="padding: 15px; border-radius: 10px; border: 1px solid rgba(0, 212, 255, 0.3); background: rgba(255, 255, 255, 0.05); color: #ffffff; font-size: 16px;">
-                </div>
-                <input type="text" placeholder="Subject" required style="width: 100%; padding: 15px; border-radius: 10px; border: 1px solid rgba(0, 212, 255, 0.3); background: rgba(255, 255, 255, 0.05); color: #ffffff; font-size: 16px; margin-bottom: 20px;">
-                <textarea placeholder="Your Message" required rows="6" style="width: 100%; padding: 15px; border-radius: 10px; border: 1px solid rgba(0, 212, 255, 0.3); background: rgba(255, 255, 255, 0.05); color: #ffffff; font-size: 16px; margin-bottom: 20px; resize: vertical;"></textarea>
-                <button type="submit" style="width: 100%; padding: 15px; background: linear-gradient(45deg, #00d4ff, #0099cc); color: #ffffff; border: none; border-radius: 50px; font-size: 16px; font-weight: bold; cursor: pointer; transition: all 0.3s ease;">
-                    Send Message
-                </button>
-            </form>
+           <form class="contact-form" action="https://formsubmit.co/amit.choudhary.tech@gmail.com" method="POST" style="max-width: 600px; margin: 0 auto;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+        <input type="text" name="name" placeholder="Your Name" required style="padding: 15px; border-radius: 10px; border: 1px solid rgba(0, 212, 255, 0.3); background: rgba(255, 255, 255, 0.05); color: #ffffff; font-size: 16px;">
+        <input type="email" name="email" placeholder="Your Email" required style="padding: 15px; border-radius: 10px; border: 1px solid rgba(0, 212, 255, 0.3); background: rgba(255, 255, 255, 0.05); color: #ffffff; font-size: 16px;">
+    </div>
+    <input type="text" name="subject" placeholder="Subject" required style="width: 100%; padding: 15px; border-radius: 10px; border: 1px solid rgba(0, 212, 255, 0.3); background: rgba(255, 255, 255, 0.05); color: #ffffff; font-size: 16px; margin-bottom: 20px;">
+    <textarea name="message" placeholder="Your Message" required rows="6" style="width: 100%; padding: 15px; border-radius: 10px; border: 1px solid rgba(0, 212, 255, 0.3); background: rgba(255, 255, 255, 0.05); color: #ffffff; font-size: 16px; margin-bottom: 20px; resize: vertical;"></textarea>
+
+    <!-- Anti-spam hidden field -->
+    <input type="text" name="_honey" style="display:none">
+    <!-- Disable CAPTCHA -->
+    <input type="hidden" name="_captcha" value="false">
+    <!-- Redirect after submit (optional) -->
+    <input type="hidden" name="_next" value="https://amitchoudhary-code.github.io/amit-choudhary-portfolio/thankyou.html">
+
+    <button type="submit" style="width: 100%; padding: 15px; background: linear-gradient(45deg, #00d4ff, #0099cc); color: #ffffff; border: none; border-radius: 50px; font-size: 16px; font-weight: bold; cursor: pointer; transition: all 0.3s ease;">
+        Send Message
+    </button>
+</form>
+
         </div>
 
         <div style="margin-top: 50px; text-align: center;">
